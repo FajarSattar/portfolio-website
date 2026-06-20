@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -186,7 +187,7 @@
           <!-- Main Image -->
           <!-- Note: 'mask-image' neeche se soft fade deta hai taakay sharp line na banay -->
           <img 
-            src="assets/herosection.png" 
+            src="assets/images/herosection.png" 
             alt="Fajar Malik AI Developer" 
             class="w-full max-w-[650px] h-full object-contain drop-shadow-[0_0_50px_rgba(99,102,241,0.2)]"
             style="-webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%); mask-image: linear-gradient(to bottom, black 85%, transparent 100%);"
@@ -558,9 +559,11 @@
                 
                 <!-- Video Container -->
                 <div class="h-64 md:h-96 bg-slate-950 rounded-b-lg overflow-hidden relative">
-                   <video id="fypVideo" class="w-full h-full object-cover transition-opacity duration-500" controls playsinline>
-    <source src="assets/demo/EduAura _ AI Learning and 1 more page - Personal - Microsoft_ Edge 2026-04-28 23-41-04.mp4" type="video/mp4">
-</video>
+                  <iframe id="fypVideo"
+  class="w-full h-full object-cover transition-opacity duration-500"
+  src="https://drive.google.com/file/d/1EOx5hhw8G8rCAE7BnoHsJCUkACOvxVNJ/preview"
+  allow="autoplay">
+</iframe>
                     <!-- Overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-[#020617] to-transparent opacity-20 pointer-events-none"></div>
                 </div>
@@ -639,30 +642,28 @@
 
 <!-- Updated JS for FYP Switcher -->
     <script>
-        const fypData = [
+   const fypData = [
     {
-        video: "assets/demo/EduAura _ AI Learning and 1 more page - Personal - Microsoft_ Edge 2026-04-28 23-41-04.mp4",
-        desc: "A centralized analytics hub where students track progress, view AI recommendations, and access all learning modules in one place."
+        video: "https://drive.google.com/file/d/1EOx5hhw8G8rCAE7BnoHsJCUkACOvxVNJ/preview",
+        desc: "A centralized analytics hub where students track progress..."
     },
     {
-        video: "assets/demo/AI Lecture Generator - Lecture View and 1 more page - Personal - Microsoft_ Edge 2026-04-26 05-08-34.mp4",
-        desc: "Converts topic descriptions into full AI-generated video lectures with voiceovers, slides, and real images using Generative AI."
+        video: "https://drive.google.com/file/d/1zNGfSChlShDru2EM6rzMGsVX4yVumof1/preview",
+        desc: "AI-generated video lectures with voiceovers..."
     },
     {
-        video: "assets/demo/Quiz Dashboard & Generator and 1 more page - Personal - Microsoft_ Edge 2026-04-26 04-46-03.mp4",
-        desc: "Uses NLP to auto-generate multiple-choice quizzes with difficulty control and Firestore-based question history to avoid repetition."
+        video: "https://drive.google.com/file/d/1uTW1kCEyE39n0hAJhBxXd_pdq52uvarm/preview",
+        desc: "Auto-generated quizzes using NLP..."
     },
     {
-        video: "assets/demo/Gamified Learning Path and 1 more page - Personal - Microsoft_ Edge 2026-04-26 05-00-06.mp4",
-        desc: "Gamified Python learning with XP points, zone-based progression, leaderboards, badges, and milestone certificates."
+        video: "https://drive.google.com/file/d/1u_NhZktO8BgsVdfYqYIeQAtL06f-JgQm/preview",
+        desc: "Gamified learning with XP and badges..."
     },
     {
-        video: "assets/demo/Visualization and 1 more page - Personal - Microsoft_ Edge 2026-04-26 05-22-11 (1).mp4",
-        desc: "Interactive DSA visualizer that animates data structures and algorithms step-by-step for better conceptual understanding."
+        video: "https://drive.google.com/file/d/1bOHIoLxynt3lxJqV--JtYZN6jCPyy58q/preview",
+        desc: "Interactive DSA visualizer..."
     }
 ];
-       
-
 function switchFYP(index) {
             const vid = document.getElementById('fypVideo');
             const desc = document.getElementById('fypDesc');
