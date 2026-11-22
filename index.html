@@ -153,11 +153,17 @@
 
     <!-- ================= HERO SECTION (Permanently Dark in Both Light & Dark Themes) ================= -->
     <section class="relative min-h-[92vh] flex items-center pt-28 pb-20 overflow-hidden bg-[#0A0F1D] text-white">
-      <img
-        src="assets/main_img.jpg"
-        alt="Developer workspace"
-        class="absolute inset-0 w-full h-full object-cover object-center opacity-30"
-      />
+       <picture class="absolute inset-0 w-full h-full">
+  <!-- Mobile Image (767px ya us se choti screen ke liye) -->
+  <source media="(max-width: 767px)" srcset="assets/still-life-graphic-design-office.jpg" />
+
+  <!-- Desktop Image (768px aur us se bari screen ke liye) -->
+  <img
+    src="assets/main_img.jpg"
+    alt="Developer workspace"
+    class="w-full h-full object-cover object-center opacity-30"
+  />
+</picture>
       <div class="absolute inset-0 bg-gradient-to-br from-[#080C18]/94 via-[#0B1224]/86 to-[#111A33]/90"></div>
       <div class="pointer-events-none absolute -top-24 right-0 w-[520px] h-[520px] rounded-full bg-indigo-500/20 blur-[130px]"></div>
 
